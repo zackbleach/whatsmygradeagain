@@ -1,0 +1,321 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <title>Whats My Grade Again?</title>
+    <script type="text/javascript" src="gradecalc.js"></script>
+    
+</head>
+<body>
+    <body link=#BBBBBB alink=#BBBBBB vlink=#BBBBBB>
+      <font face = "verdana" size = 2pt>
+      <CENTER>
+    <br>
+        <font color = #000000>
+        <b>What's my grade again?</b>
+        <br>
+            <font color = #AAAAAA>
+        Enter your mark for each module and the amount of credits it's worth. Then press calculate to find out your overall grade.
+    <br>
+<font color=#FFFFFF>
+    <FORM Name="GPACalcForm">
+    
+<TABLE BORDER=0 BGCOLOR=#FFFFFF CELLPADDING="5" CELLSPACING="10">
+<TD>
+<TABLE BORDER=0 BGCOLOR=#663399 CELLPADDING="5" CELLSPACING="2">
+<TH></TH>
+<TH>
+Mark %
+</TH>
+<TH>
+Credits
+</TH>
+<TR>
+<TD>
+Module 1
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR1" ALIGN=TOP MAXLENGTH=5 >
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR1" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 2
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR2" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR2" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 3
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR3" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR3" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 4
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR4" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR4" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 5
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR5" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR5" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 6
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR6" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR6" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 7
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR7" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR7" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 8
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR8" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR8" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 9
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR9" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR9" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 10
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR10" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR10" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+</TD>
+</TR>
+</TABLE>
+</TD>
+
+<TD>
+
+<TABLE BORDER=0 BGCOLOR=#663399 CELLPADDING="5" CELLSPACING="2">
+<TH></TH>
+<TH>
+Mark %
+</TH>
+<TH>
+Credits
+</TH>
+<TR>
+<TD>
+Module 11
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR11" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR11" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 12
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR12" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR12" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 13
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR13" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR13" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 14
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR14" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR14" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 15
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR15" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR15" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 16
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR16" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR16" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 17
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR17" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR17" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 18
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR18" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR18" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 19
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR19" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR19" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+<TR>
+<TD>
+Module 20
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="GR20" ALIGN=TOP MAXLENGTH=5>
+</TD>
+<TD>
+<INPUT TYPE=TEXT SIZE=5 NAME="CR20" ALIGN=TOP MAXLENGTH=5 onblur="calculateGrade()">
+</TD>
+</TR>
+</TD>
+</TR>
+</TABLE>
+<TD>
+
+<font color=#000000>
+    <INPUT TYPE="text" class="input" value = "0.00" name="myGrade" size ="5" style="font-size:72pt;border-width:0;border-style:solid;border-color:cccccc;" readonly="TRUE">
+    <br>
+<INPUT TYPE="text" class="input" value = "-" name="myDegree" size ="4" style="font-size:72pt;border-width:0;border-style:solid;border-color:cccccc;" readonly="TRUE">
+    <br>
+        To get a 1st next year you need:
+   <INPUT TYPE="text" class="input" value = "" name="first" size ="5" style="font-size:14pt;border-width:0;border-style:solid;border-color:cccccc;" readonly="TRUE">
+   <br>
+        To get a 2:1 next year you need:
+   <INPUT TYPE="text" class="input" value = "" name="twoOne" size ="5" style="font-size:14pt;border-width:0;border-style:solid;border-color:cccccc;" readonly="TRUE">
+<br>
+        To get a 2:2 next year you need:
+   <INPUT TYPE="text" class="input" value = "" name="twoTwo" size ="5" style="font-size:14pt;border-width:0;border-style:solid;border-color:cccccc;" readonly="TRUE">
+<br>
+        To get a 3rd next year you need:
+   <INPUT TYPE="text" class="input" value = "" name="pass" size ="5" style="font-size:14pt;border-width:0;border-style:solid;border-color:cccccc;" readonly="TRUE">
+</TD>
+</TABLE>
+
+    <font color = #000000>
+    This year is worth
+    <select name="percentageWorth">
+<option value="10">10%</option>
+<option value="20">20%</option>
+<option value="30">30%</option>
+<option value="40" selected="selected">40%</option>
+<option value="50">50%</option>
+<option value="60">60%</option>
+<option value="70">70%</option>
+<option value="80">80%</option>
+<option value="90">90%</option>
+</select>
+of my overall grade.
+
+<INPUT TYPE="BUTTON" VALUE="Calculate" NAME="CalcButton"
+OnClick="calculateGrade()">
+<INPUT TYPE="BUTTON" VALUE="Calculate with Passed Retakes" NAME="RetakeButton"
+OnClick="calculateRetake()">
+<INPUT TYPE="BUTTON" VALUE="Reset" NAME="ResetButton"
+OnClick="reset()">
+    
+</FORM>
+</CENTER>
+
+    
+    
+</body>
+</html>
+
